@@ -474,7 +474,7 @@ public abstract class BaseArFragment extends Fragment
     FragmentActivity activity = getActivity();
     if (hasFocus && activity != null) {
       // Standard Android full-screen functionality.
-      activity
+/*      activity
           .getWindow()
           .getDecorView()
           .setSystemUiVisibility(
@@ -483,7 +483,7 @@ public abstract class BaseArFragment extends Fragment
                   | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
                   | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
                   | View.SYSTEM_UI_FLAG_FULLSCREEN
-                  | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+                  | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);*/
       activity.getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
     }
   }
